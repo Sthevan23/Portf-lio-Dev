@@ -61,3 +61,11 @@ h2 {
  font : var(--subtitle);
 }
 
+.content-tag {
+  background-color: var(--gray-200);
+  color: var(--gray-500);
+  font : var(--text-md);
+  padding: 10px;
+border-radius: 8px;
+}
+
