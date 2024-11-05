@@ -1,75 +1,193 @@
+
 .header-container {
-  
   display: flex;
-    align-items: center;
-    justify-content: center; 
-  
-  }
-  
-  .linha1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-  
-   .texto {
-    margin-top: 8px;
-    text-align: center;
-    color: var(--gray-400);
-    font : var(--text-sm);
-   }
+  align-items: center;
+  justify-content: center;
+}
 
-   .texto2 {
-    font : var(--subtitle);
-    color: var(--gray-500);
-   }
-  
-  #page {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;
+.linha1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 
-  }
+.texto {
+  margin-top: 8px;
+  text-align: center;
+  color: var(--gray-400);
+  font: var(--text-sm);
+}
 
-   .profile-container {
-    position: relative;
+.texto2 {
+  font: var(--subtitle);
+  color: var(--gray-500);
+}
+
+
+#page {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;    
+  align-items: center;
+}
+
+
+.profile-container {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
-  border: 3px solid #E3646E; 
-    border-radius: 50%;
-  }
-  
-    .profile-image {
-  
-    width: 100%; 
-     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    }
-  .icon {
-   position: absolute;
-   bottom: 5px;
-   right: -10px;
-   color: #82BC4F;
+  border: 3px solid var(--red); 
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.icon {
+  position: absolute;
+  bottom: 5px;
+  right: -10px;
+  color: var(--green);
   font-size: 18px; 
   font-family: 'Inconsolata', monospace; 
-  background-color: #0D0E11; 
-   padding: 4px; 
+  background-color: var(--gray-100); 
+  padding: 4px; 
   border-radius: 50%;
-   border: 2px solid #E3646E
-    }
-    #arrow-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+  border: 2px solid var(--red);
+}
 
-    
+#arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
 
 
+#weekly {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 94px;
+  justify-items: center;
+}
+
+#weekly img {
+  height: 30px;
+  width: auto;
+}
+
+.content-tag {
+  margin-top: 8px;
+  color: var(--gray-500);
+  font-weight: bold;
+}
+
+#projets {
+  text-align: center; 
+  margin-bottom: 40px; 
+  gap: 10px;
+}
+
+#projets h3 {
+  font-size: var(--title-md);
+  color: var(--gray-600); 
+  margin-bottom: 10px;
+}
+
+#projets h2 {
+  font-size: var(--title-md); 
+  color: var(--red); 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+#projets h2 .nome-vermelho {
+  display: inline; 
+  margin-left: px;
   
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px; 
+}
+
+.project-card {
+  background-color: var(--gray-300);
+  border-radius: 8px; 
+  padding: 16px; 
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.text-p {
+  color: var(--gray-500);
+}
+
+#services {
+  background-color: var(--gray-100);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services-header h3 {
+  font-size: 16px;
+  color: var(--red); 
+  margin-bottom: 10px;
+}
+
+.services-header h2 {
+  font-size: 24px;
+  font: var(--title-md);
+  color: var(--gray-600); 
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  width: 200px;
+  background-color: var(--gray-100); 
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--gray-300);
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.service-item h4 {
+  font-size: 18px;
+  font: var(--title-sm);
+  color: var(--gray-600); 
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: var(--gray-500); 
+}
