@@ -6,12 +6,15 @@
 
 }
 
-#info {
+
+.primary {
+  background-image: url(assets/Background_Intro.png);
   background-size: 1366px 750px;
   background-position: center;  
   background-repeat: no-repeat; 
   background-size: cover;
 }
+
 .linha1 {
   display: flex;
   justify-content: center;
@@ -127,13 +130,14 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 16px; 
 }
 
 .project-card {
   background-color: var(--gray-300);
   border-radius: 8px; 
+  margin: 30px;
   color: var(--gray-500);
   font : var(--text-sm);
   padding: 16px; 
@@ -152,6 +156,7 @@
 
 #services {
   background-color: var(--gray-100);
+  background-size: 1366px 480px;
   padding: 40px 20px;
   text-align: center;
 }
@@ -204,12 +209,12 @@
 }
 
 #contact {
-  background-image: url(assets/Background_Contacts.png);
+  background-image: url(assets/Background_Intro.png);
   background-size: 1366px 787px;
-  color: var(--gray-600);
-  padding: 40px;
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;
   text-align: center;
-  margin-top: 40px;
 
 }
 
