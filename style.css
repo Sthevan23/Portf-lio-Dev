@@ -3,8 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
+#info {
+  background-size: 1366px 750px;
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
 .linha1 {
   display: flex;
   justify-content: center;
@@ -30,6 +37,7 @@
   flex-direction: column;
   justify-content: center;    
   align-items: center;
+  
 }
 
 
@@ -94,6 +102,7 @@
 #projets {
   text-align: center; 
   margin-bottom: 40px; 
+  background-size: 1366px 787px;
   gap: 10px;
 }
 
@@ -111,7 +120,7 @@
 }
 #projets h2 .nome-vermelho {
   display: inline; 
-  margin-left: px;
+  margin-left: 8px;
   
 }
 
@@ -125,6 +134,8 @@
 .project-card {
   background-color: var(--gray-300);
   border-radius: 8px; 
+  color: var(--gray-500);
+  font : var(--text-sm);
   padding: 16px; 
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
@@ -133,10 +144,10 @@
 .project-card img {
   max-width: 100%;
   height: auto; 
-}
+    font-size: 14px;
+    margin-top: 5px;
 
-.text-p {
-  color: var(--gray-500);
+
 }
 
 #services {
@@ -171,7 +182,7 @@
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--gray-300);
+  border: 1px solid var(--gray-200);
 }
 
 .service-icon {
@@ -190,4 +201,64 @@
 .service-item p {
   font-size: 14px;
   color: var(--gray-500); 
+}
+
+#contact {
+  background-image: url(assets/Background_Contacts.png);
+  background-size: 1366px 787px;
+  color: var(--gray-600);
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+#contact h2 {
+  color: var(--purple);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contact h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--gray-600);
+  font : var(--title-md)
+}
+
+#contact p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--gray-500);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-link {
+  background-color: #2e2e2e;
+  color: var(--gray-500);
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 200px;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.contact-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-link:hover {
+  background-color: #444444;
 }
